@@ -268,23 +268,19 @@ export const theNum = 42;
 
 
 fileExists:: {
- "/user/username/projects/myproject/packages/pkg2/const.cts": 1,
- "/user/username/projects/myproject/packages/pkg2/index.ts": 1,
- "/user/username/projects/myproject/packages/pkg2/build/const.cjs": 1,
  "/user/username/projects/myproject/packages/pkg2/package.json": 1,
+ "/user/username/projects/myproject/packages/pkg2/const.cts": 1,
  "/a/lib/package.json": 1,
  "/a/package.json": 1,
  "/package.json": 1,
- "/user/username/projects/myproject/packages/pkg2/build/index.d.ts": 2,
  "/user/username/projects/myproject/packages/pkg2/build/tsconfig.tsbuildinfo": 1,
- "/user/username/projects/myproject/packages/pkg1/index.ts": 1,
- "/user/username/projects/myproject/packages/pkg1/build/index.js": 1,
  "/user/username/projects/myproject/packages/pkg1/package.json": 1,
  "/user/username/projects/myproject/node_modules/pkg2/package.json": 1,
  "/user/username/projects/myproject/node_modules/pkg2/build/index.js": 1,
  "/user/username/projects/myproject/node_modules/pkg2/build/index.ts": 1,
  "/user/username/projects/myproject/node_modules/pkg2/build/index.tsx": 1,
  "/user/username/projects/myproject/node_modules/pkg2/build/index.d.ts": 1,
+ "/user/username/projects/myproject/packages/pkg2/build/index.d.ts": 1,
  "/user/username/projects/myproject/packages/pkg2/build/package.json": 1,
  "/user/username/projects/myproject/packages/pkg2/build/const.cts": 1,
  "/user/username/projects/myproject/packages/pkg2/build/const.d.cts": 1
@@ -316,7 +312,10 @@ directoryExists:: {
 getModifiedTimes:: {
  "/user/username/projects/myproject/packages/pkg2/const.cts": 1,
  "/user/username/projects/myproject/packages/pkg2/index.ts": 1,
- "/user/username/projects/myproject/packages/pkg1/index.ts": 1
+ "/user/username/projects/myproject/packages/pkg2/build/const.cjs": 1,
+ "/user/username/projects/myproject/packages/pkg2/build/index.d.ts": 1,
+ "/user/username/projects/myproject/packages/pkg1/index.ts": 1,
+ "/user/username/projects/myproject/packages/pkg1/build/index.js": 1
 } 
 
 setModifiedTimes:: {} 
@@ -450,8 +449,6 @@ exitCode:: ExitStatus.undefined
 
 
 fileExists:: {
- "/user/username/projects/myproject/packages/pkg1/index.ts": 1,
- "/user/username/projects/myproject/packages/pkg1/build/index.js": 1,
  "/user/username/projects/myproject/packages/pkg1/package.json": 1,
  "/user/username/projects/myproject/node_modules/pkg2/package.json": 1,
  "/user/username/projects/myproject/node_modules/pkg2.ts": 1,
@@ -621,8 +618,6 @@ exitCode:: ExitStatus.undefined
 //// [/user/username/projects/myproject/packages/pkg1/build/index.js] file written with same contents
 
 fileExists:: {
- "/user/username/projects/myproject/packages/pkg1/index.ts": 1,
- "/user/username/projects/myproject/packages/pkg1/build/index.js": 1,
  "/user/username/projects/myproject/packages/pkg1/package.json": 1,
  "/user/username/projects/myproject/node_modules/pkg2/package.json": 1,
  "/user/username/projects/myproject/node_modules/pkg2/build/index.js": 1,
@@ -796,8 +791,6 @@ exitCode:: ExitStatus.undefined
 
 
 fileExists:: {
- "/user/username/projects/myproject/packages/pkg1/index.ts": 1,
- "/user/username/projects/myproject/packages/pkg1/build/index.js": 1,
  "/user/username/projects/myproject/packages/pkg1/package.json": 1,
  "/user/username/projects/myproject/node_modules/pkg2/package.json": 1,
  "/user/username/projects/myproject/node_modules/pkg2.ts": 1,
@@ -1014,12 +1007,10 @@ export type { TheNum } from './const.cjs';
 
 
 fileExists:: {
- "/user/username/projects/myproject/packages/pkg2/const.cts": 1,
- "/user/username/projects/myproject/packages/pkg2/index.cts": 1,
- "/user/username/projects/myproject/packages/pkg2/build/const.cjs": 1,
  "/user/username/projects/myproject/packages/pkg2/const.cjs.ts": 1,
  "/user/username/projects/myproject/packages/pkg2/const.cjs.tsx": 1,
  "/user/username/projects/myproject/packages/pkg2/const.cjs.d.ts": 1,
+ "/user/username/projects/myproject/packages/pkg2/const.cts": 1,
  "/a/lib/package.json": 1,
  "/a/package.json": 1,
  "/package.json": 1,

@@ -261,17 +261,13 @@ exports.session = {
 
 
 fileExists:: {
- "/user/username/projects/reexport/src/pure/index.ts": 1,
  "/user/username/projects/reexport/src/pure/session.ts": 1,
- "/user/username/projects/reexport/out/pure/index.js": 1,
- "/user/username/projects/reexport/out/pure/session.d.ts": 1,
  "/user/username/projects/reexport/out/pure/tsconfig.tsbuildinfo": 1,
- "/user/username/projects/reexport/src/main/index.ts": 1,
- "/user/username/projects/reexport/out/main/index.js": 1,
  "/user/username/projects/reexport/src/pure.ts": 1,
  "/user/username/projects/reexport/src/pure.tsx": 1,
  "/user/username/projects/reexport/src/pure.d.ts": 1,
- "/user/username/projects/reexport/src/pure/package.json": 1
+ "/user/username/projects/reexport/src/pure/package.json": 1,
+ "/user/username/projects/reexport/src/pure/index.ts": 1
 } 
 
 directoryExists:: {
@@ -294,7 +290,10 @@ directoryExists:: {
 getModifiedTimes:: {
  "/user/username/projects/reexport/src/pure/index.ts": 1,
  "/user/username/projects/reexport/src/pure/session.ts": 1,
- "/user/username/projects/reexport/src/main/index.ts": 1
+ "/user/username/projects/reexport/out/pure/index.js": 1,
+ "/user/username/projects/reexport/out/pure/session.d.ts": 1,
+ "/user/username/projects/reexport/src/main/index.ts": 1,
+ "/user/username/projects/reexport/out/main/index.js": 1
 } 
 
 setModifiedTimes:: {} 
@@ -473,15 +472,13 @@ export interface Session {
 
 
 fileExists:: {
- "/user/username/projects/reexport/src/pure/index.ts": 1,
  "/user/username/projects/reexport/src/pure/session.ts": 1,
- "/user/username/projects/reexport/out/pure/index.js": 1,
- "/user/username/projects/reexport/out/pure/session.d.ts": 1,
  "/user/username/projects/reexport/out/pure/tsconfig.tsbuildinfo": 1,
  "/user/username/projects/reexport/src/pure.ts": 1,
  "/user/username/projects/reexport/src/pure.tsx": 1,
  "/user/username/projects/reexport/src/pure.d.ts": 1,
- "/user/username/projects/reexport/src/pure/package.json": 1
+ "/user/username/projects/reexport/src/pure/package.json": 1,
+ "/user/username/projects/reexport/src/pure/index.ts": 1
 } 
 
 directoryExists:: {
@@ -500,7 +497,8 @@ directoryExists:: {
 getModifiedTimes:: {
  "/user/username/projects/reexport/src/pure/index.ts": 1,
  "/user/username/projects/reexport/src/pure/session.ts": 1,
- "/user/username/projects/reexport/out/pure/index.js": 1
+ "/user/username/projects/reexport/out/pure/index.js": 1,
+ "/user/username/projects/reexport/out/pure/session.d.ts": 1
 } 
 
 setModifiedTimes:: {} 
@@ -671,15 +669,13 @@ export interface Session {
 //// [/user/username/projects/reexport/out/main/index.js] file changed its modified time
 
 fileExists:: {
- "/user/username/projects/reexport/src/pure/index.ts": 1,
  "/user/username/projects/reexport/src/pure/session.ts": 1,
- "/user/username/projects/reexport/out/pure/index.js": 1,
- "/user/username/projects/reexport/out/pure/session.d.ts": 1,
  "/user/username/projects/reexport/out/pure/tsconfig.tsbuildinfo": 1,
  "/user/username/projects/reexport/src/pure.ts": 1,
  "/user/username/projects/reexport/src/pure.tsx": 1,
  "/user/username/projects/reexport/src/pure.d.ts": 1,
- "/user/username/projects/reexport/src/pure/package.json": 1
+ "/user/username/projects/reexport/src/pure/package.json": 1,
+ "/user/username/projects/reexport/src/pure/index.ts": 1
 } 
 
 directoryExists:: {
@@ -698,7 +694,8 @@ directoryExists:: {
 getModifiedTimes:: {
  "/user/username/projects/reexport/src/pure/index.ts": 1,
  "/user/username/projects/reexport/src/pure/session.ts": 1,
- "/user/username/projects/reexport/out/pure/index.js": 1
+ "/user/username/projects/reexport/out/pure/index.js": 1,
+ "/user/username/projects/reexport/out/pure/session.d.ts": 1
 } 
 
 setModifiedTimes:: {

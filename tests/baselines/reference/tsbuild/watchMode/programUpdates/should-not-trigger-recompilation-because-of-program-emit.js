@@ -171,10 +171,6 @@ export declare function multiply(a: number, b: number): number;
 
 
 fileExists:: {
- "/user/username/projects/sample1/core/anothermodule.ts": 1,
- "/user/username/projects/sample1/core/index.ts": 1,
- "/user/username/projects/sample1/core/anothermodule.js": 1,
- "/user/username/projects/sample1/core/anothermodule.d.ts": 1,
  "/user/username/projects/sample1/core/tsconfig.tsbuildinfo": 1
 } 
 
@@ -189,7 +185,9 @@ directoryExists:: {
 
 getModifiedTimes:: {
  "/user/username/projects/sample1/core/anothermodule.ts": 1,
- "/user/username/projects/sample1/core/index.ts": 1
+ "/user/username/projects/sample1/core/index.ts": 1,
+ "/user/username/projects/sample1/core/anothermodule.js": 1,
+ "/user/username/projects/sample1/core/anothermodule.d.ts": 1
 } 
 
 setModifiedTimes:: {} 
@@ -367,11 +365,6 @@ export declare const y = 10;
 
 
 fileExists:: {
- "/user/username/projects/sample1/core/anothermodule.ts": 1,
- "/user/username/projects/sample1/core/file3.ts": 1,
- "/user/username/projects/sample1/core/index.ts": 1,
- "/user/username/projects/sample1/core/anothermodule.js": 1,
- "/user/username/projects/sample1/core/file3.d.ts": 1,
  "/user/username/projects/sample1/core/tsconfig.tsbuildinfo": 1
 } 
 
@@ -389,6 +382,7 @@ getModifiedTimes:: {
  "/user/username/projects/sample1/core/file3.ts": 1,
  "/user/username/projects/sample1/core/index.ts": 1,
  "/user/username/projects/sample1/core/anothermodule.js": 1,
+ "/user/username/projects/sample1/core/file3.d.ts": 1,
  "/user/username/projects/sample1/core/anothermodule.d.ts": 1,
  "/user/username/projects/sample1/core/index.d.ts": 1
 } 

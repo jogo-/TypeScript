@@ -170,17 +170,9 @@ export declare const m: typeof mod;
 
 
 fileExists:: {
- "/user/username/projects/sample1/core/anothermodule.ts": 1,
  "/user/username/projects/sample1/core/index.ts": 1,
- "/user/username/projects/sample1/core/some_decl.d.ts": 1,
- "/user/username/projects/sample1/core/anothermodule.js": 1,
- "/user/username/projects/sample1/core/anothermodule.d.ts": 1,
- "/user/username/projects/sample1/logic/index.ts": 1,
- "/user/username/projects/sample1/logic/index.js": 1,
- "/user/username/projects/sample1/logic/index.d.ts": 1,
- "/user/username/projects/sample1/tests/index.ts": 1,
- "/user/username/projects/sample1/tests/index.js": 1,
- "/user/username/projects/sample1/tests/index.d.ts": 1
+ "/user/username/projects/sample1/core/anothermodule.ts": 1,
+ "/user/username/projects/sample1/logic/index.ts": 1
 } 
 
 directoryExists:: {
@@ -200,8 +192,14 @@ getModifiedTimes:: {
  "/user/username/projects/sample1/core/anothermodule.ts": 1,
  "/user/username/projects/sample1/core/index.ts": 1,
  "/user/username/projects/sample1/core/some_decl.d.ts": 1,
+ "/user/username/projects/sample1/core/anothermodule.js": 1,
+ "/user/username/projects/sample1/core/anothermodule.d.ts": 1,
  "/user/username/projects/sample1/logic/index.ts": 1,
- "/user/username/projects/sample1/tests/index.ts": 1
+ "/user/username/projects/sample1/logic/index.js": 1,
+ "/user/username/projects/sample1/logic/index.d.ts": 1,
+ "/user/username/projects/sample1/tests/index.ts": 1,
+ "/user/username/projects/sample1/tests/index.js": 1,
+ "/user/username/projects/sample1/tests/index.d.ts": 1
 } 
 
 setModifiedTimes:: {} 
@@ -335,19 +333,8 @@ function foo() { }
 
 
 fileExists:: {
- "/user/username/projects/sample1/core/anothermodule.ts": 1,
  "/user/username/projects/sample1/core/index.ts": 1,
- "/user/username/projects/sample1/core/some_decl.d.ts": 1,
- "/user/username/projects/sample1/core/anothermodule.js": 1,
- "/user/username/projects/sample1/core/anothermodule.d.ts": 1,
- "/user/username/projects/sample1/core/anothermodule.d.ts.map": 1,
- "/user/username/projects/sample1/core/index.js": 1,
- "/user/username/projects/sample1/core/index.d.ts": 1,
- "/user/username/projects/sample1/core/index.d.ts.map": 1,
- "/user/username/projects/sample1/core/tsconfig.tsbuildinfo": 1,
- "/user/username/projects/sample1/logic/index.ts": 1,
- "/user/username/projects/sample1/logic/index.js": 1,
- "/user/username/projects/sample1/logic/index.d.ts": 1
+ "/user/username/projects/sample1/core/anothermodule.ts": 1
 } 
 
 directoryExists:: {
@@ -505,19 +492,8 @@ export declare function gfoo(): void;
 
 
 fileExists:: {
- "/user/username/projects/sample1/core/anothermodule.ts": 1,
  "/user/username/projects/sample1/core/index.ts": 1,
- "/user/username/projects/sample1/core/some_decl.d.ts": 1,
- "/user/username/projects/sample1/core/anothermodule.js": 1,
- "/user/username/projects/sample1/core/anothermodule.d.ts": 1,
- "/user/username/projects/sample1/core/anothermodule.d.ts.map": 1,
- "/user/username/projects/sample1/core/index.js": 1,
- "/user/username/projects/sample1/core/index.d.ts": 1,
- "/user/username/projects/sample1/core/index.d.ts.map": 1,
- "/user/username/projects/sample1/core/tsconfig.tsbuildinfo": 1,
- "/user/username/projects/sample1/logic/index.ts": 1,
- "/user/username/projects/sample1/logic/index.js": 1,
- "/user/username/projects/sample1/logic/index.d.ts": 1
+ "/user/username/projects/sample1/core/anothermodule.ts": 1
 } 
 
 directoryExists:: {
@@ -543,7 +519,8 @@ getModifiedTimes:: {
  "/user/username/projects/sample1/core/tsconfig.tsbuildinfo": 1,
  "/user/username/projects/sample1/core/tsconfig.json": 1,
  "/user/username/projects/sample1/logic/index.ts": 1,
- "/user/username/projects/sample1/logic/index.js": 1
+ "/user/username/projects/sample1/logic/index.js": 1,
+ "/user/username/projects/sample1/logic/index.d.ts": 1
 } 
 
 setModifiedTimes:: {} 
@@ -754,19 +731,8 @@ export declare function gfoo(): void;
 
 
 fileExists:: {
- "/user/username/projects/sample1/core/anothermodule.ts": 1,
  "/user/username/projects/sample1/core/index.ts": 1,
- "/user/username/projects/sample1/core/some_decl.d.ts": 1,
- "/user/username/projects/sample1/core/anothermodule.js": 1,
- "/user/username/projects/sample1/core/anothermodule.d.ts": 1,
- "/user/username/projects/sample1/core/anothermodule.d.ts.map": 1,
- "/user/username/projects/sample1/core/index.js": 1,
- "/user/username/projects/sample1/core/index.d.ts": 1,
- "/user/username/projects/sample1/core/index.d.ts.map": 1,
- "/user/username/projects/sample1/core/tsconfig.tsbuildinfo": 1,
- "/user/username/projects/sample1/logic/index.ts": 1,
- "/user/username/projects/sample1/logic/index.js": 1,
- "/user/username/projects/sample1/logic/decls/index.d.ts": 1,
+ "/user/username/projects/sample1/core/anothermodule.ts": 1,
  "/user/username/projects/sample1/logic/decls": 1
 } 
 
@@ -795,7 +761,8 @@ getModifiedTimes:: {
  "/user/username/projects/sample1/core/tsconfig.tsbuildinfo": 1,
  "/user/username/projects/sample1/core/tsconfig.json": 1,
  "/user/username/projects/sample1/logic/index.ts": 1,
- "/user/username/projects/sample1/logic/index.js": 1
+ "/user/username/projects/sample1/logic/index.js": 1,
+ "/user/username/projects/sample1/logic/decls/index.d.ts": 2
 } 
 
 setModifiedTimes:: {} 

@@ -73,16 +73,14 @@ Shape signatures in builder refreshed for::
 getModifiedTime:: {
  "/src/shared/types/db.ts": 1,
  "/src/src/main.ts": 1,
- "/src/src/other.ts": 1
+ "/src/src/other.ts": 1,
+ "/src/dev-build/shared/types/db.js": 1
 }
 
 setModifiedTime:: {}
 
 fileExists:: {
- "/src/shared/types/db.ts": 1,
- "/src/src/main.ts": 1,
- "/src/src/other.ts": 1,
- "/src/dev-build/shared/types/db.js": 1
+ "/src/shared/types/db.ts": 1
 }
 
 directoryExists:: {
@@ -132,16 +130,14 @@ Shape signatures in builder refreshed for::
 getModifiedTime:: {
  "/src/shared/types/db.ts": 1,
  "/src/src/main.ts": 1,
- "/src/src/other.ts": 1
+ "/src/src/other.ts": 1,
+ "/src/dev-build/shared/types/db.js": 1
 }
 
 setModifiedTime:: {}
 
 fileExists:: {
- "/src/shared/types/db.ts": 1,
- "/src/src/main.ts": 1,
- "/src/src/other.ts": 1,
- "/src/dev-build/shared/types/db.js": 1
+ "/src/shared/types/db.ts": 1
 }
 
 directoryExists:: {
@@ -187,16 +183,14 @@ Shape signatures in builder refreshed for::
 getModifiedTime:: {
  "/src/shared/types/db.ts": 1,
  "/src/src/main.ts": 1,
- "/src/src/other.ts": 1
+ "/src/src/other.ts": 1,
+ "/src/dev-build/shared/types/db.js": 1
 }
 
 setModifiedTime:: {}
 
 fileExists:: {
- "/src/shared/types/db.ts": 1,
- "/src/src/main.ts": 1,
- "/src/src/other.ts": 1,
- "/src/dev-build/shared/types/db.js": 1
+ "/src/shared/types/db.ts": 1
 }
 
 directoryExists:: {
@@ -244,14 +238,7 @@ getModifiedTime:: {
 
 setModifiedTime:: {}
 
-fileExists:: {
- "/src/shared/types/db.ts": 1,
- "/src/src/main.ts": 1,
- "/src/src/other.ts": 1,
- "/src/dev-build/shared/types/db.js": 1,
- "/src/dev-build/src/main.js": 1,
- "/src/dev-build/src/other.js": 1
-}
+fileExists:: {}
 
 directoryExists:: {}
 

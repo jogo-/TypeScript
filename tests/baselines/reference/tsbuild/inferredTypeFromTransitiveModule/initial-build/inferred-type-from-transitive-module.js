@@ -86,19 +86,17 @@ getModifiedTime:: {
  "/src/bundling.ts": 1,
  "/src/global.d.ts": 1,
  "/src/index.ts": 1,
- "/src/lazyIndex.ts": 1
+ "/src/lazyIndex.ts": 1,
+ "/src/obj/bar.js": 1,
+ "/src/obj/bar.d.ts": 1
 }
 
 setModifiedTime:: {}
 
 fileExists:: {
- "/src/bar.ts": 1,
  "/src/bundling.ts": 1,
- "/src/global.d.ts": 1,
- "/src/index.ts": 1,
  "/src/lazyIndex.ts": 1,
- "/src/obj/bar.js": 1,
- "/src/obj/bar.d.ts": 1,
+ "/src/bar.ts": 1,
  "/src/obj/tsconfig.tsbuildinfo": 1
 }
 
@@ -300,6 +298,7 @@ getModifiedTime:: {
  "/src/index.ts": 1,
  "/src/lazyIndex.ts": 1,
  "/src/obj/bar.js": 1,
+ "/src/obj/index.d.ts": 1,
  "/src/obj/bundling.d.ts": 1
 }
 
@@ -309,13 +308,9 @@ setModifiedTime:: {
 }
 
 fileExists:: {
- "/src/bar.ts": 1,
  "/src/bundling.ts": 1,
- "/src/global.d.ts": 1,
- "/src/index.ts": 1,
  "/src/lazyIndex.ts": 1,
- "/src/obj/bar.js": 1,
- "/src/obj/index.d.ts": 1,
+ "/src/bar.ts": 1,
  "/src/obj/tsconfig.tsbuildinfo": 1
 }
 
@@ -468,6 +463,7 @@ getModifiedTime:: {
  "/src/index.ts": 1,
  "/src/lazyIndex.ts": 1,
  "/src/obj/bar.js": 1,
+ "/src/obj/index.d.ts": 1,
  "/src/obj/bundling.d.ts": 1
 }
 
@@ -478,13 +474,9 @@ setModifiedTime:: {
 }
 
 fileExists:: {
- "/src/bar.ts": 1,
  "/src/bundling.ts": 1,
- "/src/global.d.ts": 1,
- "/src/index.ts": 1,
  "/src/lazyIndex.ts": 1,
- "/src/obj/bar.js": 1,
- "/src/obj/index.d.ts": 1,
+ "/src/bar.ts": 1,
  "/src/obj/tsconfig.tsbuildinfo": 1
 }
 

@@ -974,8 +974,9 @@ namespace ts {
                 let priorChangeTime: Date | undefined;
                 if (!anyDtsChanged && isDeclarationFile(name)) {
                     // Check for unchanged .d.ts files
-                    if (host.fileExists(name) && state.readFileWithCache(name) === text) {
-                        priorChangeTime = host.getModifiedTime(name);
+                    const modifiedTime = getModifiedTime(host, name);
+                    if (modifiedTime !== missingFileModifiedTime && state.readFileWithCache(name) === text) {
+                        priorChangeTime = modifiedTime;
                     }
                     else {
                         resultFlags &= ~BuildResultFlags.DeclarationOutputUnchanged;
@@ -1350,13 +1351,21 @@ namespace ts {
     }
 
     function getUpToDateStatusWorker(state: SolutionBuilderState, project: ParsedCommandLine, resolvedPath: ResolvedConfigFilePath): UpToDateStatus {
+         // Container if no files are specified in the project
+         if (!project.fileNames.length && !canJsonReportNoInputFiles(project.raw)) {
+            return {
+                type: UpToDateStatusType.ContainerOnly
+            };
+        }
+
         const force = !!state.options.force;
         let newestInputFileName: string = undefined!;
         let newestInputFileTime = minimumDate;
         const { host } = state;
         // Get timestamps of input files
         for (const inputFile of project.fileNames) {
-            if (!host.fileExists(inputFile)) {
+            const inputTime = getModifiedTime(host, inputFile);
+            if (inputTime === missingFileModifiedTime) {
                 return {
                     type: UpToDateStatusType.Unbuildable,
                     reason: `${inputFile} does not exist`
@@ -1364,19 +1373,11 @@ namespace ts {
             }
 
             if (!force) {
-                const inputTime = getModifiedTime(host, inputFile);
                 if (inputTime > newestInputFileTime) {
                     newestInputFileName = inputFile;
                     newestInputFileTime = inputTime;
                 }
             }
-        }
-
-        // Container if no files are specified in the project
-        if (!project.fileNames.length && !canJsonReportNoInputFiles(project.raw)) {
-            return {
-                type: UpToDateStatusType.ContainerOnly
-            };
         }
 
         // Collect the expected outputs of this project
@@ -1385,8 +1386,6 @@ namespace ts {
         // Now see if all outputs are newer than the newest input
         let oldestOutputFileName = "(none)";
         let oldestOutputFileTime = maximumDate;
-        let newestOutputFileName = "(none)";
-        let newestOutputFileTime = minimumDate;
         let missingOutputFileName: string | undefined;
         let newestDeclarationFileContentChangedTime = minimumDate;
         let isOutOfDateWithInputs = false;
@@ -1394,12 +1393,12 @@ namespace ts {
             for (const output of outputs) {
                 // Output is missing; can stop checking
                 // Don't immediately return because we can still be upstream-blocked, which is a higher-priority status
-                if (!host.fileExists(output)) {
+                const outputTime = getModifiedTime(host, output);
+                if (outputTime === missingFileModifiedTime) {
                     missingOutputFileName = output;
                     break;
                 }
 
-                const outputTime = getModifiedTime(host, output);
                 if (outputTime < oldestOutputFileTime) {
                     oldestOutputFileTime = outputTime;
                     oldestOutputFileName = output;
@@ -1410,11 +1409,6 @@ namespace ts {
                 if (outputTime < newestInputFileTime) {
                     isOutOfDateWithInputs = true;
                     break;
-                }
-
-                if (outputTime > newestOutputFileTime) {
-                    newestOutputFileTime = outputTime;
-                    newestOutputFileName = output;
                 }
 
                 // Keep track of when the most recent time a .d.ts file was changed.
@@ -1550,9 +1544,7 @@ namespace ts {
             type: pseudoUpToDate ? UpToDateStatusType.UpToDateWithUpstreamTypes : UpToDateStatusType.UpToDate,
             newestDeclarationFileContentChangedTime,
             newestInputFileTime,
-            newestOutputFileTime,
             newestInputFileName,
-            newestOutputFileName,
             oldestOutputFileName
         };
     }

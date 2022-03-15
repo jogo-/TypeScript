@@ -81,25 +81,24 @@ exitCode:: ExitStatus.Success
 
 getModifiedTime:: {
  "/src/solution/src/common/nominal.ts": 1,
+ "/src/solution/lib/src/common/nominal.js": 1,
+ "/src/solution/lib/src/common/nominal.d.ts": 1,
  "/src/solution/src/subProject/index.ts": 1,
- "/src/solution/src/subProject2/index.ts": 1
+ "/src/solution/lib/src/subProject/index.js": 1,
+ "/src/solution/lib/src/subProject/index.d.ts": 1,
+ "/src/solution/src/subProject2/index.ts": 1,
+ "/src/solution/lib/src/subProject2/index.js": 1,
+ "/src/solution/lib/src/subProject2/index.d.ts": 1
 }
 
 setModifiedTime:: {}
 
 fileExists:: {
  "/src/solution/tsconfig.base.json": 3,
- "/src/solution/src/common/nominal.ts": 1,
- "/src/solution/lib/src/common/nominal.js": 1,
- "/src/solution/lib/src/common/nominal.d.ts": 1,
  "/src/solution/lib/src/common/tsconfig.tsbuildinfo": 1,
- "/src/solution/src/subProject/index.ts": 1,
- "/src/solution/lib/src/subProject/index.js": 1,
- "/src/solution/lib/src/subProject/index.d.ts": 1,
+ "/src/solution/src/common/nominal.ts": 1,
  "/src/solution/lib/src/subProject/tsconfig.tsbuildinfo": 1,
- "/src/solution/src/subProject2/index.ts": 1,
- "/src/solution/lib/src/subProject2/index.js": 1,
- "/src/solution/lib/src/subProject2/index.d.ts": 1,
+ "/src/solution/src/subProject/index.ts": 1,
  "/src/solution/lib/src/subProject2/tsconfig.tsbuildinfo": 1
 }
 

@@ -442,18 +442,11 @@ export declare const m: typeof mod;
 
 
 fileExists:: {
- "/user/username/projects/sample1/core/anothermodule.ts": 1,
- "/user/username/projects/sample1/core/index.ts": 1,
- "/user/username/projects/sample1/core/anothermodule.js": 1,
- "/user/username/projects/sample1/tests/index.ts": 1,
- "/user/username/projects/sample1/tests/index.js": 1,
- "/user/username/projects/sample1/logic/index.ts": 1,
- "/user/username/projects/sample1/logic/index.js": 1,
- "/user/username/projects/sample1/core/anothermodule.d.ts": 1,
  "/user/username/projects/sample1/core/tsconfig.tsbuildinfo": 1,
- "/user/username/projects/sample1/logic/index.d.ts": 1,
+ "/user/username/projects/sample1/core/index.ts": 1,
+ "/user/username/projects/sample1/core/anothermodule.ts": 1,
  "/user/username/projects/sample1/logic/tsconfig.tsbuildinfo": 1,
- "/user/username/projects/sample1/tests/index.d.ts": 1,
+ "/user/username/projects/sample1/logic/index.ts": 1,
  "/user/username/projects/sample1/tests/tsconfig.tsbuildinfo": 1
 } 
 
@@ -473,8 +466,14 @@ directoryExists:: {
 getModifiedTimes:: {
  "/user/username/projects/sample1/core/anothermodule.ts": 1,
  "/user/username/projects/sample1/core/index.ts": 1,
+ "/user/username/projects/sample1/core/anothermodule.js": 1,
  "/user/username/projects/sample1/tests/index.ts": 1,
- "/user/username/projects/sample1/logic/index.ts": 1
+ "/user/username/projects/sample1/tests/index.js": 1,
+ "/user/username/projects/sample1/logic/index.ts": 1,
+ "/user/username/projects/sample1/logic/index.js": 1,
+ "/user/username/projects/sample1/core/anothermodule.d.ts": 1,
+ "/user/username/projects/sample1/logic/index.d.ts": 1,
+ "/user/username/projects/sample1/tests/index.d.ts": 1
 } 
 
 setModifiedTimes:: {} 
@@ -608,11 +607,6 @@ export declare const newFileConst = 30;
 
 
 fileExists:: {
- "/user/username/projects/sample1/core/anothermodule.ts": 1,
- "/user/username/projects/sample1/core/index.ts": 1,
- "/user/username/projects/sample1/core/newfile.ts": 1,
- "/user/username/projects/sample1/core/anothermodule.js": 1,
- "/user/username/projects/sample1/core/newfile.d.ts": 1,
  "/user/username/projects/sample1/core/tsconfig.tsbuildinfo": 1
 } 
 
@@ -630,6 +624,7 @@ getModifiedTimes:: {
  "/user/username/projects/sample1/core/index.ts": 1,
  "/user/username/projects/sample1/core/newfile.ts": 1,
  "/user/username/projects/sample1/core/anothermodule.js": 1,
+ "/user/username/projects/sample1/core/newfile.d.ts": 1,
  "/user/username/projects/sample1/core/anothermodule.d.ts": 1,
  "/user/username/projects/sample1/core/index.d.ts": 1
 } 
@@ -701,7 +696,10 @@ exitCode:: ExitStatus.undefined
 //// [/user/username/projects/sample1/logic/index.d.ts] file changed its modified time
 //// [/user/username/projects/sample1/logic/tsconfig.tsbuildinfo] file changed its modified time
 
-fileExists:: {} 
+fileExists:: {
+ "/user/username/projects/sample1/core/index.ts": 1,
+ "/user/username/projects/sample1/core/anothermodule.ts": 1
+} 
 
 directoryExists:: {
  "/user/username/projects/sample1/core": 4,
@@ -950,11 +948,6 @@ export declare class someClass2 {
 
 
 fileExists:: {
- "/user/username/projects/sample1/core/anothermodule.ts": 1,
- "/user/username/projects/sample1/core/index.ts": 1,
- "/user/username/projects/sample1/core/newfile.ts": 1,
- "/user/username/projects/sample1/core/anothermodule.js": 1,
- "/user/username/projects/sample1/core/newfile.d.ts": 1,
  "/user/username/projects/sample1/core/tsconfig.tsbuildinfo": 1
 } 
 
@@ -972,6 +965,7 @@ getModifiedTimes:: {
  "/user/username/projects/sample1/core/index.ts": 1,
  "/user/username/projects/sample1/core/newfile.ts": 1,
  "/user/username/projects/sample1/core/anothermodule.js": 1,
+ "/user/username/projects/sample1/core/newfile.d.ts": 1,
  "/user/username/projects/sample1/core/anothermodule.d.ts": 1,
  "/user/username/projects/sample1/core/index.d.ts": 1
 } 
@@ -1043,7 +1037,10 @@ exitCode:: ExitStatus.undefined
 //// [/user/username/projects/sample1/logic/index.d.ts] file changed its modified time
 //// [/user/username/projects/sample1/logic/tsconfig.tsbuildinfo] file changed its modified time
 
-fileExists:: {} 
+fileExists:: {
+ "/user/username/projects/sample1/core/index.ts": 1,
+ "/user/username/projects/sample1/core/anothermodule.ts": 1
+} 
 
 directoryExists:: {
  "/user/username/projects/sample1/core": 4,

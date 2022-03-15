@@ -64,23 +64,21 @@ exitCode:: ExitStatus.Success
 
 getModifiedTime:: {
  "/src/packages/pkg1_index.ts": 1,
- "/src/packages/pkg2_index.ts": 1
+ "/src/packages/pkg1_index.js": 1,
+ "/src/packages/pkg1_index.d.ts": 1,
+ "/src/packages/pkg2_index.ts": 1,
+ "/src/packages/pkg2_index.js": 1,
+ "/src/packages/pkg2_index.d.ts": 1
 }
 
 setModifiedTime:: {}
 
 fileExists:: {
- "/src/packages/pkg1_index.ts": 1,
- "/src/packages/pkg1_index.js": 1,
  "/src/packages/typeroot1/sometype/package.json": 1,
  "/src/packages/typeroot1/sometype/index.d.ts": 1,
- "/src/packages/pkg1_index.d.ts": 1,
  "/src/packages/pkg1.tsconfig.tsbuildinfo": 1,
- "/src/packages/pkg2_index.ts": 1,
- "/src/packages/pkg2_index.js": 1,
  "/src/packages/typeroot2/sometype/package.json": 1,
  "/src/packages/typeroot2/sometype/index.d.ts": 1,
- "/src/packages/pkg2_index.d.ts": 1,
  "/src/packages/pkg2.tsconfig.tsbuildinfo": 1
 }
 

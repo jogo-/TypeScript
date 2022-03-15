@@ -253,13 +253,7 @@ export declare function f22(): void;
 
 
 fileExists:: {
- "/user/username/projects/myproject/shared/index.ts": 1,
- "/user/username/projects/myproject/shared/index.js": 1,
- "/user/username/projects/myproject/shared/index.d.ts": 1,
  "/user/username/projects/myproject/shared/tsconfig.tsbuildinfo": 1,
- "/user/username/projects/myproject/webpack/index.ts": 1,
- "/user/username/projects/myproject/webpack/index.js": 1,
- "/user/username/projects/myproject/webpack/index.d.ts": 1,
  "/user/username/projects/myproject/webpack/tsconfig.tsbuildinfo": 1
 } 
 
@@ -275,7 +269,11 @@ directoryExists:: {
 
 getModifiedTimes:: {
  "/user/username/projects/myproject/shared/index.ts": 1,
- "/user/username/projects/myproject/webpack/index.ts": 1
+ "/user/username/projects/myproject/shared/index.js": 1,
+ "/user/username/projects/myproject/shared/index.d.ts": 1,
+ "/user/username/projects/myproject/webpack/index.ts": 1,
+ "/user/username/projects/myproject/webpack/index.js": 1,
+ "/user/username/projects/myproject/webpack/index.d.ts": 1
 } 
 
 setModifiedTimes:: {} 
@@ -440,9 +438,6 @@ export declare function f2(): void;
 //// [/user/username/projects/myproject/webpack/tsconfig.tsbuildinfo] file changed its modified time
 
 fileExists:: {
- "/user/username/projects/myproject/shared/index.ts": 1,
- "/user/username/projects/myproject/shared/index.js": 1,
- "/user/username/projects/myproject/shared/index.d.ts": 1,
  "/user/username/projects/myproject/shared/tsconfig.tsbuildinfo": 1
 } 
 
@@ -459,6 +454,7 @@ directoryExists:: {
 getModifiedTimes:: {
  "/user/username/projects/myproject/shared/index.ts": 1,
  "/user/username/projects/myproject/shared/index.js": 1,
+ "/user/username/projects/myproject/shared/index.d.ts": 1,
  "/user/username/projects/myproject/webpack/index.d.ts": 1
 } 
 

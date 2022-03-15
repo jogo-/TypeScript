@@ -101,10 +101,7 @@ exitCode:: ExitStatus.undefined
 
 
 fileExists:: {
- "/user/username/projects/noemitonerror/shared/types/db.ts": 1,
- "/user/username/projects/noemitonerror/src/main.ts": 1,
- "/user/username/projects/noemitonerror/src/other.ts": 1,
- "/user/username/projects/noemitonerror/dev-build/shared/types/db.js": 1
+ "/user/username/projects/noemitonerror/shared/types/db.ts": 1
 } 
 
 directoryExists:: {
@@ -119,7 +116,8 @@ directoryExists:: {
 getModifiedTimes:: {
  "/user/username/projects/noemitonerror/shared/types/db.ts": 1,
  "/user/username/projects/noemitonerror/src/main.ts": 1,
- "/user/username/projects/noemitonerror/src/other.ts": 1
+ "/user/username/projects/noemitonerror/src/other.ts": 1,
+ "/user/username/projects/noemitonerror/dev-build/shared/types/db.js": 1
 } 
 
 setModifiedTimes:: {} 
@@ -187,10 +185,7 @@ exitCode:: ExitStatus.undefined
 
 
 fileExists:: {
- "/user/username/projects/noemitonerror/shared/types/db.ts": 1,
- "/user/username/projects/noemitonerror/src/main.ts": 1,
- "/user/username/projects/noemitonerror/src/other.ts": 1,
- "/user/username/projects/noemitonerror/dev-build/shared/types/db.js": 1
+ "/user/username/projects/noemitonerror/shared/types/db.ts": 1
 } 
 
 directoryExists:: {
@@ -205,7 +200,8 @@ directoryExists:: {
 getModifiedTimes:: {
  "/user/username/projects/noemitonerror/shared/types/db.ts": 1,
  "/user/username/projects/noemitonerror/src/main.ts": 1,
- "/user/username/projects/noemitonerror/src/other.ts": 1
+ "/user/username/projects/noemitonerror/src/other.ts": 1,
+ "/user/username/projects/noemitonerror/dev-build/shared/types/db.js": 1
 } 
 
 setModifiedTimes:: {} 
@@ -358,9 +354,6 @@ console.log("hi");
 
 fileExists:: {
  "/user/username/projects/noemitonerror/shared/types/db.ts": 1,
- "/user/username/projects/noemitonerror/src/main.ts": 1,
- "/user/username/projects/noemitonerror/src/other.ts": 1,
- "/user/username/projects/noemitonerror/dev-build/shared/types/db.js": 1,
  "/user/username/projects/noemitonerror/dev-build/tsconfig.tsbuildinfo": 1
 } 
 
@@ -381,7 +374,8 @@ directoryExists:: {
 getModifiedTimes:: {
  "/user/username/projects/noemitonerror/shared/types/db.ts": 1,
  "/user/username/projects/noemitonerror/src/main.ts": 1,
- "/user/username/projects/noemitonerror/src/other.ts": 1
+ "/user/username/projects/noemitonerror/src/other.ts": 1,
+ "/user/username/projects/noemitonerror/dev-build/shared/types/db.js": 1
 } 
 
 setModifiedTimes:: {} 
@@ -530,9 +524,6 @@ exitCode:: ExitStatus.undefined
 
 fileExists:: {
  "/user/username/projects/noemitonerror/shared/types/db.ts": 1,
- "/user/username/projects/noemitonerror/src/main.ts": 1,
- "/user/username/projects/noemitonerror/src/other.ts": 1,
- "/user/username/projects/noemitonerror/dev-build/shared/types/db.js": 1,
  "/user/username/projects/noemitonerror/dev-build/tsconfig.tsbuildinfo": 1
 } 
 
@@ -617,10 +608,7 @@ exitCode:: ExitStatus.undefined
 
 
 fileExists:: {
- "/user/username/projects/noemitonerror/shared/types/db.ts": 1,
- "/user/username/projects/noemitonerror/src/main.ts": 1,
- "/user/username/projects/noemitonerror/src/other.ts": 1,
- "/user/username/projects/noemitonerror/dev-build/shared/types/db.js": 1
+ "/user/username/projects/noemitonerror/shared/types/db.ts": 1
 } 
 
 directoryExists:: {
@@ -772,9 +760,6 @@ var a = "hello";
 
 fileExists:: {
  "/user/username/projects/noemitonerror/shared/types/db.ts": 1,
- "/user/username/projects/noemitonerror/src/main.ts": 1,
- "/user/username/projects/noemitonerror/src/other.ts": 1,
- "/user/username/projects/noemitonerror/dev-build/shared/types/db.js": 1,
  "/user/username/projects/noemitonerror/dev-build/tsconfig.tsbuildinfo": 1
 } 
 
@@ -863,10 +848,7 @@ exitCode:: ExitStatus.undefined
 //// [/user/username/projects/noEmitOnError/dev-build/tsconfig.tsbuildinfo] file changed its modified time
 
 fileExists:: {
- "/user/username/projects/noemitonerror/shared/types/db.ts": 1,
- "/user/username/projects/noemitonerror/src/main.ts": 1,
- "/user/username/projects/noemitonerror/src/other.ts": 1,
- "/user/username/projects/noemitonerror/dev-build/shared/types/db.js": 1
+ "/user/username/projects/noemitonerror/shared/types/db.ts": 1
 } 
 
 directoryExists:: {

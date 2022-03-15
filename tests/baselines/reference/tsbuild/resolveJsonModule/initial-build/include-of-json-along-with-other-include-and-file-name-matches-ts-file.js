@@ -70,21 +70,20 @@ exitCode:: ExitStatus.Success
 
 getModifiedTime:: {
  "/src/src/index.ts": 1,
- "/src/src/index.json": 1
+ "/src/src/index.json": 1,
+ "/src/dist/src/index.js": 1,
+ "/src/dist/src/index.d.ts": 1
 }
 
 setModifiedTime:: {}
 
 fileExists:: {
- "/src/src/index.ts": 1,
- "/src/src/index.json": 1,
- "/src/dist/src/index.js": 1,
  "/src/src/index.json.ts": 1,
  "/src/src/index.json.tsx": 1,
  "/src/src/index.json.d.ts": 1,
  "/src/src/index.json.js": 1,
  "/src/src/index.json.jsx": 1,
- "/src/dist/src/index.d.ts": 1,
+ "/src/src/index.json": 1,
  "/src/dist/tsconfig_withIncludeOfJson.tsbuildinfo": 1
 }
 

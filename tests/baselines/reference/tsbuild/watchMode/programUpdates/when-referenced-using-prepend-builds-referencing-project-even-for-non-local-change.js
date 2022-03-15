@@ -243,14 +243,12 @@ declare function bar(): number;
 
 
 fileExists:: {
- "/user/username/projects/sample1/core/index.ts": 1,
- "/user/username/projects/sample1/core/index.js": 3,
- "/user/username/projects/sample1/core/index.d.ts": 2,
  "/user/username/projects/sample1/core/index.tsbuildinfo": 1,
- "/user/username/projects/sample1/logic/index.ts": 1,
- "/user/username/projects/sample1/logic/index.js": 2,
- "/user/username/projects/sample1/logic/index.d.ts": 2,
- "/user/username/projects/sample1/logic/index.tsbuildinfo": 1
+ "/user/username/projects/sample1/core/index.js": 2,
+ "/user/username/projects/sample1/core/index.d.ts": 1,
+ "/user/username/projects/sample1/logic/index.tsbuildinfo": 1,
+ "/user/username/projects/sample1/logic/index.js": 1,
+ "/user/username/projects/sample1/logic/index.d.ts": 1
 } 
 
 directoryExists:: {
@@ -265,7 +263,11 @@ directoryExists:: {
 
 getModifiedTimes:: {
  "/user/username/projects/sample1/core/index.ts": 1,
- "/user/username/projects/sample1/logic/index.ts": 1
+ "/user/username/projects/sample1/core/index.js": 1,
+ "/user/username/projects/sample1/core/index.d.ts": 1,
+ "/user/username/projects/sample1/logic/index.ts": 1,
+ "/user/username/projects/sample1/logic/index.js": 1,
+ "/user/username/projects/sample1/logic/index.d.ts": 1
 } 
 
 setModifiedTimes:: {} 
@@ -386,10 +388,9 @@ declare function myFunc(): number;
 
 
 fileExists:: {
- "/user/username/projects/sample1/core/index.ts": 1,
- "/user/username/projects/sample1/core/index.js": 2,
- "/user/username/projects/sample1/core/index.d.ts": 2,
- "/user/username/projects/sample1/core/index.tsbuildinfo": 1
+ "/user/username/projects/sample1/core/index.tsbuildinfo": 1,
+ "/user/username/projects/sample1/core/index.js": 1,
+ "/user/username/projects/sample1/core/index.d.ts": 1
 } 
 
 directoryExists:: {
@@ -403,7 +404,8 @@ directoryExists:: {
 
 getModifiedTimes:: {
  "/user/username/projects/sample1/core/index.ts": 1,
- "/user/username/projects/sample1/core/index.js": 1
+ "/user/username/projects/sample1/core/index.js": 1,
+ "/user/username/projects/sample1/core/index.d.ts": 1
 } 
 
 setModifiedTimes:: {} 
@@ -563,9 +565,9 @@ declare function bar(): number;
 
 fileExists:: {
  "/user/username/projects/sample1/core/index.js": 1,
- "/user/username/projects/sample1/logic/index.d.ts": 2,
  "/user/username/projects/sample1/logic/index.tsbuildinfo": 1,
- "/user/username/projects/sample1/logic/index.js": 1
+ "/user/username/projects/sample1/logic/index.js": 1,
+ "/user/username/projects/sample1/logic/index.d.ts": 1
 } 
 
 directoryExists:: {
@@ -577,7 +579,9 @@ directoryExists:: {
  "/node_modules/@types": 1
 } 
 
-getModifiedTimes:: {} 
+getModifiedTimes:: {
+ "/user/username/projects/sample1/logic/index.d.ts": 1
+} 
 
 setModifiedTimes:: {} 
 
@@ -693,10 +697,9 @@ declare function myFunc(): number;
 
 
 fileExists:: {
- "/user/username/projects/sample1/core/index.ts": 1,
- "/user/username/projects/sample1/core/index.js": 2,
- "/user/username/projects/sample1/core/index.d.ts": 2,
- "/user/username/projects/sample1/core/index.tsbuildinfo": 1
+ "/user/username/projects/sample1/core/index.tsbuildinfo": 1,
+ "/user/username/projects/sample1/core/index.js": 1,
+ "/user/username/projects/sample1/core/index.d.ts": 1
 } 
 
 directoryExists:: {

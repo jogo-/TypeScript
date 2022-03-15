@@ -58,7 +58,11 @@ exitCode:: ExitStatus.Success
 
 getModifiedTime:: {
  "/src/packages/pkg1/src/index.ts": 1,
- "/src/packages/pkg2/src/index.ts": 1
+ "/src/packages/pkg1/lib/src/index.js": 1,
+ "/src/packages/pkg1/lib/src/index.d.ts": 1,
+ "/src/packages/pkg2/src/index.ts": 1,
+ "/src/packages/pkg2/lib/src/index.js": 1,
+ "/src/packages/pkg2/lib/src/index.d.ts": 1
 }
 
 setModifiedTime:: {}
@@ -66,17 +70,12 @@ setModifiedTime:: {}
 fileExists:: {
  "/src/tsconfig": 2,
  "/src/tsconfig.json": 2,
- "/src/packages/pkg1/src/index.ts": 1,
- "/src/packages/pkg1/lib/src/index.js": 1,
- "/src/packages/pkg1/lib/src/index.d.ts": 1,
  "/src/packages/pkg1/lib/tsconfig.tsbuildinfo": 1,
- "/src/packages/pkg2/src/index.ts": 1,
- "/src/packages/pkg2/lib/src/index.js": 1,
  "/src/packages/pkg1/src.ts": 1,
  "/src/packages/pkg1/src.tsx": 1,
  "/src/packages/pkg1/src.d.ts": 1,
  "/src/packages/pkg1/src/package.json": 1,
- "/src/packages/pkg2/lib/src/index.d.ts": 1,
+ "/src/packages/pkg1/src/index.ts": 1,
  "/src/packages/pkg2/lib/tsconfig.tsbuildinfo": 1
 }
 

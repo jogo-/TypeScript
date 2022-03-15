@@ -88,25 +88,24 @@ getModifiedTime:: {
  "/src/lib/file1.ts": 1,
  "/src/lib/file2.ts": 1,
  "/src/lib/global.ts": 1,
+ "/src/module.js": 1,
+ "/src/module.d.ts": 1,
  "/src/app/file3.ts": 1,
- "/src/app/file4.ts": 1
+ "/src/app/file4.ts": 1,
+ "/src/app/module.js": 1,
+ "/src/app/module.d.ts": 1
 }
 
 setModifiedTime:: {}
 
 fileExists:: {
- "/src/lib/file0.ts": 1,
- "/src/lib/file1.ts": 1,
- "/src/lib/file2.ts": 1,
- "/src/lib/global.ts": 1,
- "/src/module.js": 3,
- "/src/module.d.ts": 2,
  "/src/module.tsbuildinfo": 1,
- "/src/app/file3.ts": 1,
- "/src/app/file4.ts": 1,
- "/src/app/module.js": 2,
- "/src/app/module.d.ts": 2,
- "/src/app/module.tsbuildinfo": 1
+ "/src/module.js": 2,
+ "/src/module.d.ts": 1,
+ "/src/lib/file1.ts": 1,
+ "/src/app/module.tsbuildinfo": 1,
+ "/src/app/module.js": 1,
+ "/src/app/module.d.ts": 1
 }
 
 directoryExists:: {
