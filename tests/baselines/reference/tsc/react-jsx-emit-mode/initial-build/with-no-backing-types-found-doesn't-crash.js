@@ -43,6 +43,34 @@ Output::
 /lib/tsc --p src/project
 exitCode:: ExitStatus.Success
 
+getModifiedTime:: {}
+
+setModifiedTime:: {}
+
+fileExists:: {
+ "/src/project/node_modules/react/package.json": 1,
+ "/src/project/node_modules/react/jsx-runtime.ts": 1,
+ "/src/project/node_modules/react/jsx-runtime.tsx": 1,
+ "/src/project/node_modules/react/jsx-runtime.d.ts": 1,
+ "/src/project/node_modules/@types/react/package.json": 1,
+ "/src/project/node_modules/@types/react/jsx-runtime.d.ts": 1,
+ "/src/project/node_modules/react/jsx-runtime.js": 1,
+ "/src/project/node_modules/@types/react/index.d.ts": 1,
+ "/src/project/tsconfig.tsbuildinfo": 1
+}
+
+directoryExists:: {
+ "/src/project/src/node_modules": 1,
+ "/src/project/node_modules": 1,
+ "/src/project/node_modules/react/jsx-runtime": 1,
+ "/src/project/node_modules/react": 1,
+ "/src/project/node_modules/@types": 1,
+ "/src/project/node_modules/@types/react/jsx-runtime": 1,
+ "/src/project/node_modules/@types/react": 1,
+ "/src/node_modules": 1,
+ "/src/node_modules/@types": 1
+}
+
 
 //// [/src/project/src/index.js]
 "use strict";

@@ -25,4 +25,12 @@ Output::
 /src/test.ts
 exitCode:: ExitStatus.Success
 
+getModifiedTime:: {}
+
+setModifiedTime:: {}
+
+fileExists:: {}
+
+directoryExists:: {}
+
 

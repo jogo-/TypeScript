@@ -60,6 +60,19 @@ Found 3 errors in the same file, starting at: src/project/index.tsx[90m:10[0m
 
 exitCode:: ExitStatus.DiagnosticsPresent_OutputsGenerated
 
+getModifiedTime:: {}
+
+setModifiedTime:: {}
+
+fileExists:: {
+ "/src/project/tsconfig.tsbuildinfo": 1
+}
+
+directoryExists:: {
+ "/src/project/node_modules/@types": 1,
+ "/src/node_modules/@types": 1
+}
+
 
 //// [/src/project/index.js]
 "use strict";
@@ -181,5 +194,16 @@ Output::
 Found 3 errors in the same file, starting at: src/project/index.tsx[90m:10[0m
 
 exitCode:: ExitStatus.DiagnosticsPresent_OutputsGenerated
+
+getModifiedTime:: {}
+
+setModifiedTime:: {}
+
+fileExists:: {}
+
+directoryExists:: {
+ "/src/project/node_modules/@types": 1,
+ "/src/node_modules/@types": 1
+}
 
 

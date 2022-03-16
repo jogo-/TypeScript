@@ -32,6 +32,19 @@ Output::
 /lib/tsc --p src/project
 exitCode:: ExitStatus.Success
 
+getModifiedTime:: {}
+
+setModifiedTime:: {}
+
+fileExists:: {
+ "/src/project/built/tsconfig.tsbuildinfo": 1
+}
+
+directoryExists:: {
+ "/src/project/node_modules/@types": 1,
+ "/src/node_modules/@types": 1
+}
+
 
 //// [/src/project/built/src/main.js]
 "use strict";
@@ -85,5 +98,16 @@ Input::
 Output::
 /lib/tsc --p src/project
 exitCode:: ExitStatus.Success
+
+getModifiedTime:: {}
+
+setModifiedTime:: {}
+
+fileExists:: {}
+
+directoryExists:: {
+ "/src/project/node_modules/@types": 1,
+ "/src/node_modules/@types": 1
+}
 
 

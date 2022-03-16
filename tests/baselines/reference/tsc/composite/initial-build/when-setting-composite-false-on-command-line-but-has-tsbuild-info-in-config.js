@@ -44,6 +44,17 @@ Found 1 error in src/project/tsconfig.json[90m:6[0m
 
 exitCode:: ExitStatus.DiagnosticsPresent_OutputsGenerated
 
+getModifiedTime:: {}
+
+setModifiedTime:: {}
+
+fileExists:: {}
+
+directoryExists:: {
+ "/src/project/node_modules/@types": 1,
+ "/src/node_modules/@types": 1
+}
+
 
 //// [/src/project/src/main.js]
 "use strict";

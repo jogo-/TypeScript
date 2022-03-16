@@ -35,6 +35,20 @@ Output::
 /lib/tsc -i -p src/projects/project2
 exitCode:: ExitStatus.Success
 
+getModifiedTime:: {}
+
+setModifiedTime:: {}
+
+fileExists:: {
+ "/src/projects/project2/tsconfig.tsbuildinfo": 1
+}
+
+directoryExists:: {
+ "/src/projects/project2/node_modules/@types": 1,
+ "/src/projects/node_modules/@types": 1,
+ "/src/node_modules/@types": 1
+}
+
 
 //// [/src/projects/project2/class2.d.ts]
 declare class class2 {
@@ -116,6 +130,18 @@ Found 1 error.
 
 exitCode:: ExitStatus.DiagnosticsPresent_OutputsGenerated
 
+getModifiedTime:: {}
+
+setModifiedTime:: {}
+
+fileExists:: {}
+
+directoryExists:: {
+ "/src/projects/project2/node_modules/@types": 1,
+ "/src/projects/node_modules/@types": 1,
+ "/src/node_modules/@types": 1
+}
+
 
 
 
@@ -129,6 +155,20 @@ declare class class3 {}
 Output::
 /lib/tsc -i -p src/projects/project2
 exitCode:: ExitStatus.Success
+
+getModifiedTime:: {}
+
+setModifiedTime:: {}
+
+fileExists:: {
+ "/src/projects/project2/tsconfig.tsbuildinfo": 1
+}
+
+directoryExists:: {
+ "/src/projects/project2/node_modules/@types": 1,
+ "/src/projects/node_modules/@types": 1,
+ "/src/node_modules/@types": 1
+}
 
 
 //// [/src/projects/project2/class2.d.ts] file written with same contents
@@ -195,6 +235,18 @@ Output::
 /lib/tsc -i -p src/projects/project2
 exitCode:: ExitStatus.Success
 
+getModifiedTime:: {}
+
+setModifiedTime:: {}
+
+fileExists:: {}
+
+directoryExists:: {
+ "/src/projects/project2/node_modules/@types": 1,
+ "/src/projects/node_modules/@types": 1,
+ "/src/node_modules/@types": 1
+}
+
 
 
 
@@ -218,6 +270,20 @@ Output::
 Found 1 error.
 
 exitCode:: ExitStatus.DiagnosticsPresent_OutputsGenerated
+
+getModifiedTime:: {}
+
+setModifiedTime:: {}
+
+fileExists:: {
+ "/src/projects/project2/tsconfig.tsbuildinfo": 1
+}
+
+directoryExists:: {
+ "/src/projects/project2/node_modules/@types": 1,
+ "/src/projects/node_modules/@types": 1,
+ "/src/node_modules/@types": 1
+}
 
 
 //// [/src/projects/project2/class2.d.ts] file written with same contents
@@ -274,6 +340,20 @@ declare class class3 {}
 Output::
 /lib/tsc -i -p src/projects/project2
 exitCode:: ExitStatus.Success
+
+getModifiedTime:: {}
+
+setModifiedTime:: {}
+
+fileExists:: {
+ "/src/projects/project2/tsconfig.tsbuildinfo": 1
+}
+
+directoryExists:: {
+ "/src/projects/project2/node_modules/@types": 1,
+ "/src/projects/node_modules/@types": 1,
+ "/src/node_modules/@types": 1
+}
 
 
 //// [/src/projects/project2/class2.d.ts] file written with same contents

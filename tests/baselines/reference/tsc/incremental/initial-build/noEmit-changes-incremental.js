@@ -58,6 +58,22 @@ Found 1 error in src/project/src/noChangeFileWithEmitSpecificError.ts[90m:1[0m
 
 exitCode:: ExitStatus.DiagnosticsPresent_OutputsGenerated
 
+getModifiedTime:: {}
+
+setModifiedTime:: {}
+
+fileExists:: {
+ "/src/project/src/indirectClass.ts": 1,
+ "/src/project/src/class.ts": 1,
+ "/src/project/tsconfig.tsbuildinfo": 1
+}
+
+directoryExists:: {
+ "/src/project/src": 1,
+ "/src/project/node_modules/@types": 1,
+ "/src/node_modules/@types": 1
+}
+
 
 //// [/src/project/src/class.js]
 "use strict";
@@ -232,6 +248,21 @@ Output::
 /lib/tsc --p src/project --noEmit
 exitCode:: ExitStatus.Success
 
+getModifiedTime:: {}
+
+setModifiedTime:: {}
+
+fileExists:: {
+ "/src/project/src/indirectClass.ts": 1,
+ "/src/project/src/class.ts": 1
+}
+
+directoryExists:: {
+ "/src/project/src": 1,
+ "/src/project/node_modules/@types": 1,
+ "/src/node_modules/@types": 1
+}
+
 
 
 
@@ -242,6 +273,21 @@ Input::
 Output::
 /lib/tsc --p src/project --noEmit
 exitCode:: ExitStatus.Success
+
+getModifiedTime:: {}
+
+setModifiedTime:: {}
+
+fileExists:: {
+ "/src/project/src/indirectClass.ts": 1,
+ "/src/project/src/class.ts": 1
+}
+
+directoryExists:: {
+ "/src/project/src": 1,
+ "/src/project/node_modules/@types": 1,
+ "/src/node_modules/@types": 1
+}
 
 
 
@@ -284,6 +330,22 @@ Errors  Files
      1  src/project/src/directUse.ts[90m:2[0m
      1  src/project/src/indirectUse.ts[90m:2[0m
 exitCode:: ExitStatus.DiagnosticsPresent_OutputsGenerated
+
+getModifiedTime:: {}
+
+setModifiedTime:: {}
+
+fileExists:: {
+ "/src/project/src/indirectClass.ts": 1,
+ "/src/project/src/class.ts": 1,
+ "/src/project/tsconfig.tsbuildinfo": 1
+}
+
+directoryExists:: {
+ "/src/project/src": 1,
+ "/src/project/node_modules/@types": 1,
+ "/src/node_modules/@types": 1
+}
 
 
 //// [/src/project/tsconfig.tsbuildinfo]
@@ -469,6 +531,22 @@ Found 1 error in src/project/src/noChangeFileWithEmitSpecificError.ts[90m:1[0m
 
 exitCode:: ExitStatus.DiagnosticsPresent_OutputsGenerated
 
+getModifiedTime:: {}
+
+setModifiedTime:: {}
+
+fileExists:: {
+ "/src/project/src/indirectClass.ts": 1,
+ "/src/project/src/class.ts": 1,
+ "/src/project/tsconfig.tsbuildinfo": 1
+}
+
+directoryExists:: {
+ "/src/project/src": 1,
+ "/src/project/node_modules/@types": 1,
+ "/src/node_modules/@types": 1
+}
+
 
 //// [/src/project/src/class.js] file written with same contents
 //// [/src/project/src/directUse.js] file written with same contents
@@ -596,6 +674,21 @@ Found 1 error in src/project/src/noChangeFileWithEmitSpecificError.ts[90m:1[0m
 
 exitCode:: ExitStatus.DiagnosticsPresent_OutputsGenerated
 
+getModifiedTime:: {}
+
+setModifiedTime:: {}
+
+fileExists:: {
+ "/src/project/src/indirectClass.ts": 1,
+ "/src/project/src/class.ts": 1
+}
+
+directoryExists:: {
+ "/src/project/src": 1,
+ "/src/project/node_modules/@types": 1,
+ "/src/node_modules/@types": 1
+}
+
 
 
 
@@ -607,6 +700,21 @@ Output::
 /lib/tsc --p src/project --noEmit
 exitCode:: ExitStatus.Success
 
+getModifiedTime:: {}
+
+setModifiedTime:: {}
+
+fileExists:: {
+ "/src/project/src/indirectClass.ts": 1,
+ "/src/project/src/class.ts": 1
+}
+
+directoryExists:: {
+ "/src/project/src": 1,
+ "/src/project/node_modules/@types": 1,
+ "/src/node_modules/@types": 1
+}
+
 
 
 
@@ -617,6 +725,21 @@ Input::
 Output::
 /lib/tsc --p src/project --noEmit
 exitCode:: ExitStatus.Success
+
+getModifiedTime:: {}
+
+setModifiedTime:: {}
+
+fileExists:: {
+ "/src/project/src/indirectClass.ts": 1,
+ "/src/project/src/class.ts": 1
+}
+
+directoryExists:: {
+ "/src/project/src": 1,
+ "/src/project/node_modules/@types": 1,
+ "/src/node_modules/@types": 1
+}
 
 
 
@@ -636,6 +759,21 @@ Output::
 Found 1 error in src/project/src/noChangeFileWithEmitSpecificError.ts[90m:1[0m
 
 exitCode:: ExitStatus.DiagnosticsPresent_OutputsGenerated
+
+getModifiedTime:: {}
+
+setModifiedTime:: {}
+
+fileExists:: {
+ "/src/project/src/indirectClass.ts": 1,
+ "/src/project/src/class.ts": 1
+}
+
+directoryExists:: {
+ "/src/project/src": 1,
+ "/src/project/node_modules/@types": 1,
+ "/src/node_modules/@types": 1
+}
 
 
 
@@ -684,6 +822,22 @@ Errors  Files
      1  src/project/src/indirectUse.ts[90m:2[0m
      1  src/project/src/noChangeFileWithEmitSpecificError.ts[90m:1[0m
 exitCode:: ExitStatus.DiagnosticsPresent_OutputsGenerated
+
+getModifiedTime:: {}
+
+setModifiedTime:: {}
+
+fileExists:: {
+ "/src/project/src/indirectClass.ts": 1,
+ "/src/project/src/class.ts": 1,
+ "/src/project/tsconfig.tsbuildinfo": 1
+}
+
+directoryExists:: {
+ "/src/project/src": 1,
+ "/src/project/node_modules/@types": 1,
+ "/src/node_modules/@types": 1
+}
 
 
 //// [/src/project/src/class.js]
@@ -890,42 +1044,20 @@ Errors  Files
      1  src/project/src/noChangeFileWithEmitSpecificError.ts[90m:1[0m
 exitCode:: ExitStatus.DiagnosticsPresent_OutputsGenerated
 
+getModifiedTime:: {}
 
+setModifiedTime:: {}
 
+fileExists:: {
+ "/src/project/src/indirectClass.ts": 1,
+ "/src/project/src/class.ts": 1
+}
 
-Change:: No Change run with noEmit
-Input::
-
-
-Output::
-/lib/tsc --p src/project --noEmit
-[96msrc/project/src/directUse.ts[0m:[93m2[0m:[93m28[0m - [91merror[0m[90m TS2551: [0mProperty 'prop' does not exist on type 'classC'. Did you mean 'prop1'?
-
-[7m2[0m new indirectClass().classC.prop;
-[7m [0m [91m                           ~~~~[0m
-
-  [96msrc/project/src/class.ts[0m:[93m2[0m:[93m5[0m
-    [7m2[0m     prop1 = 1;
-    [7m [0m [96m    ~~~~~[0m
-    'prop1' is declared here.
-
-[96msrc/project/src/indirectUse.ts[0m:[93m2[0m:[93m28[0m - [91merror[0m[90m TS2551: [0mProperty 'prop' does not exist on type 'classC'. Did you mean 'prop1'?
-
-[7m2[0m new indirectClass().classC.prop;
-[7m [0m [91m                           ~~~~[0m
-
-  [96msrc/project/src/class.ts[0m:[93m2[0m:[93m5[0m
-    [7m2[0m     prop1 = 1;
-    [7m [0m [96m    ~~~~~[0m
-    'prop1' is declared here.
-
-
-Found 2 errors in 2 files.
-
-Errors  Files
-     1  src/project/src/directUse.ts[90m:2[0m
-     1  src/project/src/indirectUse.ts[90m:2[0m
-exitCode:: ExitStatus.DiagnosticsPresent_OutputsSkipped
+directoryExists:: {
+ "/src/project/src": 1,
+ "/src/project/node_modules/@types": 1,
+ "/src/node_modules/@types": 1
+}
 
 
 
@@ -963,6 +1095,73 @@ Errors  Files
      1  src/project/src/directUse.ts[90m:2[0m
      1  src/project/src/indirectUse.ts[90m:2[0m
 exitCode:: ExitStatus.DiagnosticsPresent_OutputsSkipped
+
+getModifiedTime:: {}
+
+setModifiedTime:: {}
+
+fileExists:: {
+ "/src/project/src/indirectClass.ts": 1,
+ "/src/project/src/class.ts": 1
+}
+
+directoryExists:: {
+ "/src/project/src": 1,
+ "/src/project/node_modules/@types": 1,
+ "/src/node_modules/@types": 1
+}
+
+
+
+
+Change:: No Change run with noEmit
+Input::
+
+
+Output::
+/lib/tsc --p src/project --noEmit
+[96msrc/project/src/directUse.ts[0m:[93m2[0m:[93m28[0m - [91merror[0m[90m TS2551: [0mProperty 'prop' does not exist on type 'classC'. Did you mean 'prop1'?
+
+[7m2[0m new indirectClass().classC.prop;
+[7m [0m [91m                           ~~~~[0m
+
+  [96msrc/project/src/class.ts[0m:[93m2[0m:[93m5[0m
+    [7m2[0m     prop1 = 1;
+    [7m [0m [96m    ~~~~~[0m
+    'prop1' is declared here.
+
+[96msrc/project/src/indirectUse.ts[0m:[93m2[0m:[93m28[0m - [91merror[0m[90m TS2551: [0mProperty 'prop' does not exist on type 'classC'. Did you mean 'prop1'?
+
+[7m2[0m new indirectClass().classC.prop;
+[7m [0m [91m                           ~~~~[0m
+
+  [96msrc/project/src/class.ts[0m:[93m2[0m:[93m5[0m
+    [7m2[0m     prop1 = 1;
+    [7m [0m [96m    ~~~~~[0m
+    'prop1' is declared here.
+
+
+Found 2 errors in 2 files.
+
+Errors  Files
+     1  src/project/src/directUse.ts[90m:2[0m
+     1  src/project/src/indirectUse.ts[90m:2[0m
+exitCode:: ExitStatus.DiagnosticsPresent_OutputsSkipped
+
+getModifiedTime:: {}
+
+setModifiedTime:: {}
+
+fileExists:: {
+ "/src/project/src/indirectClass.ts": 1,
+ "/src/project/src/class.ts": 1
+}
+
+directoryExists:: {
+ "/src/project/src": 1,
+ "/src/project/node_modules/@types": 1,
+ "/src/node_modules/@types": 1
+}
 
 
 
@@ -1007,6 +1206,21 @@ Errors  Files
      1  src/project/src/noChangeFileWithEmitSpecificError.ts[90m:1[0m
 exitCode:: ExitStatus.DiagnosticsPresent_OutputsGenerated
 
+getModifiedTime:: {}
+
+setModifiedTime:: {}
+
+fileExists:: {
+ "/src/project/src/indirectClass.ts": 1,
+ "/src/project/src/class.ts": 1
+}
+
+directoryExists:: {
+ "/src/project/src": 1,
+ "/src/project/node_modules/@types": 1,
+ "/src/node_modules/@types": 1
+}
+
 
 
 
@@ -1022,6 +1236,22 @@ export class classC {
 Output::
 /lib/tsc --p src/project --noEmit
 exitCode:: ExitStatus.Success
+
+getModifiedTime:: {}
+
+setModifiedTime:: {}
+
+fileExists:: {
+ "/src/project/src/indirectClass.ts": 1,
+ "/src/project/src/class.ts": 1,
+ "/src/project/tsconfig.tsbuildinfo": 1
+}
+
+directoryExists:: {
+ "/src/project/src": 1,
+ "/src/project/node_modules/@types": 1,
+ "/src/node_modules/@types": 1
+}
 
 
 //// [/src/project/tsconfig.tsbuildinfo]
@@ -1156,6 +1386,22 @@ Found 1 error in src/project/src/noChangeFileWithEmitSpecificError.ts[90m:1[0m
 
 exitCode:: ExitStatus.DiagnosticsPresent_OutputsGenerated
 
+getModifiedTime:: {}
+
+setModifiedTime:: {}
+
+fileExists:: {
+ "/src/project/src/indirectClass.ts": 1,
+ "/src/project/src/class.ts": 1,
+ "/src/project/tsconfig.tsbuildinfo": 1
+}
+
+directoryExists:: {
+ "/src/project/src": 1,
+ "/src/project/node_modules/@types": 1,
+ "/src/node_modules/@types": 1
+}
+
 
 //// [/src/project/src/class.js]
 "use strict";
@@ -1285,6 +1531,21 @@ Output::
 /lib/tsc --p src/project --noEmit
 exitCode:: ExitStatus.Success
 
+getModifiedTime:: {}
+
+setModifiedTime:: {}
+
+fileExists:: {
+ "/src/project/src/indirectClass.ts": 1,
+ "/src/project/src/class.ts": 1
+}
+
+directoryExists:: {
+ "/src/project/src": 1,
+ "/src/project/node_modules/@types": 1,
+ "/src/node_modules/@types": 1
+}
+
 
 
 
@@ -1295,6 +1556,21 @@ Input::
 Output::
 /lib/tsc --p src/project --noEmit
 exitCode:: ExitStatus.Success
+
+getModifiedTime:: {}
+
+setModifiedTime:: {}
+
+fileExists:: {
+ "/src/project/src/indirectClass.ts": 1,
+ "/src/project/src/class.ts": 1
+}
+
+directoryExists:: {
+ "/src/project/src": 1,
+ "/src/project/node_modules/@types": 1,
+ "/src/node_modules/@types": 1
+}
 
 
 
@@ -1314,5 +1590,20 @@ Output::
 Found 1 error in src/project/src/noChangeFileWithEmitSpecificError.ts[90m:1[0m
 
 exitCode:: ExitStatus.DiagnosticsPresent_OutputsGenerated
+
+getModifiedTime:: {}
+
+setModifiedTime:: {}
+
+fileExists:: {
+ "/src/project/src/indirectClass.ts": 1,
+ "/src/project/src/class.ts": 1
+}
+
+directoryExists:: {
+ "/src/project/src": 1,
+ "/src/project/node_modules/@types": 1,
+ "/src/node_modules/@types": 1
+}
 
 

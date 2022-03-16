@@ -81,6 +81,31 @@ Output::
 
 exitCode:: ExitStatus.Success
 
+getModifiedTime:: {
+ "/src/bar.ts": 1,
+ "/src/bundling.ts": 1,
+ "/src/global.d.ts": 1,
+ "/src/index.ts": 1,
+ "/src/lazyIndex.ts": 1
+}
+
+setModifiedTime:: {}
+
+fileExists:: {
+ "/src/bar.ts": 1,
+ "/src/bundling.ts": 1,
+ "/src/global.d.ts": 1,
+ "/src/index.ts": 1,
+ "/src/lazyIndex.ts": 1,
+ "/src/obj/bar.js": 1,
+ "/src/obj/bar.d.ts": 1,
+ "/src/obj/tsconfig.tsbuildinfo": 1
+}
+
+directoryExists:: {
+ "/src/node_modules/@types": 1
+}
+
 
 //// [/src/obj/bar.d.ts]
 declare const _default: (param: string) => void;
@@ -268,6 +293,40 @@ Output::
 
 exitCode:: ExitStatus.Success
 
+getModifiedTime:: {
+ "/src/bar.ts": 1,
+ "/src/bundling.ts": 1,
+ "/src/global.d.ts": 1,
+ "/src/index.ts": 1,
+ "/src/lazyIndex.ts": 1,
+ "/src/obj/bar.js": 1,
+ "/src/obj/lazyIndex.d.ts": 1,
+ "/src/obj/bundling.d.ts": 1
+}
+
+setModifiedTime:: {
+ "/src/obj/bundling.js": 1,
+ "/src/obj/bundling.d.ts": 1,
+ "/src/obj/index.js": 1,
+ "/src/obj/lazyIndex.js": 1
+}
+
+fileExists:: {
+ "/src/bar.ts": 1,
+ "/src/bundling.ts": 1,
+ "/src/global.d.ts": 1,
+ "/src/index.ts": 1,
+ "/src/lazyIndex.ts": 1,
+ "/src/obj/bar.js": 1,
+ "/src/obj/lazyIndex.d.ts": 1,
+ "/src/obj/index.d.ts": 1,
+ "/src/obj/tsconfig.tsbuildinfo": 1
+}
+
+directoryExists:: {
+ "/src/node_modules/@types": 1
+}
+
 
 //// [/src/obj/bar.d.ts]
 declare const _default: () => void;
@@ -403,6 +462,40 @@ Output::
 [[90m12:07:00 AM[0m] Updating unchanged output timestamps of project '/src/tsconfig.json'...
 
 exitCode:: ExitStatus.Success
+
+getModifiedTime:: {
+ "/src/bar.ts": 1,
+ "/src/bundling.ts": 1,
+ "/src/global.d.ts": 1,
+ "/src/index.ts": 1,
+ "/src/lazyIndex.ts": 1,
+ "/src/obj/bar.js": 1,
+ "/src/obj/lazyIndex.d.ts": 1,
+ "/src/obj/bundling.d.ts": 1
+}
+
+setModifiedTime:: {
+ "/src/obj/bundling.js": 1,
+ "/src/obj/bundling.d.ts": 1,
+ "/src/obj/index.js": 1,
+ "/src/obj/lazyIndex.js": 1
+}
+
+fileExists:: {
+ "/src/bar.ts": 1,
+ "/src/bundling.ts": 1,
+ "/src/global.d.ts": 1,
+ "/src/index.ts": 1,
+ "/src/lazyIndex.ts": 1,
+ "/src/obj/bar.js": 1,
+ "/src/obj/lazyIndex.d.ts": 1,
+ "/src/obj/index.d.ts": 1,
+ "/src/obj/tsconfig.tsbuildinfo": 1
+}
+
+directoryExists:: {
+ "/src/node_modules/@types": 1
+}
 
 
 //// [/src/obj/bar.d.ts]

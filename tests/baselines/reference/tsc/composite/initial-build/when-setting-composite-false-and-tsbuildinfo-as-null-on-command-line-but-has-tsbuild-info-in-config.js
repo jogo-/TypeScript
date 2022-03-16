@@ -36,6 +36,17 @@ Output::
 /lib/tsc --composite false --p src/project --tsBuildInfoFile null
 exitCode:: ExitStatus.Success
 
+getModifiedTime:: {}
+
+setModifiedTime:: {}
+
+fileExists:: {}
+
+directoryExists:: {
+ "/src/project/node_modules/@types": 1,
+ "/src/node_modules/@types": 1
+}
+
 
 //// [/src/project/src/main.js]
 "use strict";

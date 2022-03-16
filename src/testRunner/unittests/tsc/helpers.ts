@@ -107,6 +107,43 @@ namespace ts {
             return originalReadFile.call(sys, path);
         };
 
+        const getModifiedCalls: MapLike<number> = {};
+        const setModifiedCalls: MapLike<number> = {};
+        const fileExistsCalls: MapLike<number> = {};
+        const directoryExistsCalls: MapLike<number> = {};
+        const originalGetModifiedTime = sys.getModifiedTime;
+        sys.getModifiedTime = path => {
+            // Dont record libs
+            if (path.startsWith("/src/")) {
+                getModifiedCalls[path] = (getProperty(getModifiedCalls, path) || 0) + 1;
+            }
+            return originalGetModifiedTime.call(sys, path);
+        };
+        const originalSetModifiedTime = sys.setModifiedTime;
+        sys.setModifiedTime = (path, time) => {
+            // Dont record libs
+            if (path.startsWith("/src/")) {
+                setModifiedCalls[path] = (getProperty(setModifiedCalls, path) || 0) + 1;
+            }
+            return originalSetModifiedTime.call(sys, path, time);
+        };
+        const originalFileExists = sys.fileExists;
+        sys.fileExists = path => {
+            // Dont record libs
+            if (path.startsWith("/src/")) {
+                fileExistsCalls[path] = (getProperty(fileExistsCalls, path) || 0) + 1;
+            }
+            return originalFileExists.call(sys, path);
+        };
+        const originalDirectoryExists = sys.directoryExists;
+        sys.directoryExists = path => {
+            // Dont record libs
+            if (path.startsWith("/src/")) {
+                directoryExistsCalls[path] = (getProperty(directoryExistsCalls, path) || 0) + 1;
+            }
+            return originalDirectoryExists.call(sys, path);
+        };
+
         sys.write(`${sys.getExecutingFilePath()} ${commandLineArgs.join(" ")}\n`);
         sys.exit = exitCode => sys.exitCode = exitCode;
         const { cb, getPrograms } = commandLineCallbacks(sys, originalReadFile, originalWriteFile);
@@ -124,6 +161,10 @@ namespace ts {
         if (baselineReadFileCalls) {
             sys.write(`readFiles:: ${JSON.stringify(actualReadFileMap, /*replacer*/ undefined, " ")} `);
         }
+        sys.write(`\ngetModifiedTime:: ${JSON.stringify(getModifiedCalls, /*replacer*/ undefined, " ")}\n`);
+        sys.write(`\nsetModifiedTime:: ${JSON.stringify(setModifiedCalls, /*replacer*/ undefined, " ")}\n`);
+        sys.write(`\nfileExists:: ${JSON.stringify(fileExistsCalls, /*replacer*/ undefined, " ")}\n`);
+        sys.write(`\ndirectoryExists:: ${JSON.stringify(directoryExistsCalls, /*replacer*/ undefined, " ")}\n`);
         if (baselineSourceMap) generateSourceMapBaselineFiles(sys);
 
         fs.makeReadonly();

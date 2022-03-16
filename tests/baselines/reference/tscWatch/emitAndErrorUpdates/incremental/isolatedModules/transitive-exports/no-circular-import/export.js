@@ -49,6 +49,14 @@ interface String { charAt: any; }
 interface Array<T> { length: number; [n: number]: T; }
 
 
+fileExists:: {} 
+
+directoryExists:: {} 
+
+getModifiedTimes:: {} 
+
+setModifiedTimes:: {} 
+
 /a/lib/tsc.js --w --i
 Output::
 >> Screen clear
@@ -323,6 +331,31 @@ exports.App = App;
 }
 
 
+fileExists:: {
+ "/user/username/projects/myproject/tsconfig.json": 1,
+ "/user/username/projects/myproject/lib2/public.ts": 1,
+ "/user/username/projects/myproject/lib2/data.ts": 1,
+ "/user/username/projects/myproject/lib1/public.ts": 1,
+ "/user/username/projects/myproject/lib1/tools/public.ts": 1,
+ "/user/username/projects/myproject/lib1/tools/tools.interface.ts": 1,
+ "/user/username/projects/myproject/tsconfig.tsbuildinfo": 1
+} 
+
+directoryExists:: {
+ "/user/username/projects/myproject/lib2": 5,
+ "/user/username/projects/myproject/lib1": 3,
+ "/user/username/projects/myproject/lib1/tools": 4,
+ "/user/username/projects/myproject/node_modules/@types": 1,
+ "/user/username/projects/node_modules/@types": 1,
+ "/user/username/node_modules/@types": 1,
+ "/user/node_modules/@types": 1,
+ "/node_modules/@types": 1
+} 
+
+getModifiedTimes:: {} 
+
+setModifiedTimes:: {} 
+
 Change:: Rename property title to title2 of interface ITest to initialize signatures
 
 Input::
@@ -331,6 +364,14 @@ export interface ITest {
     title2: string;
 }
 
+
+fileExists:: {} 
+
+directoryExists:: {} 
+
+getModifiedTimes:: {} 
+
+setModifiedTimes:: {} 
 
 Output::
 >> Screen clear
@@ -536,6 +577,16 @@ exitCode:: ExitStatus.undefined
 }
 
 
+fileExists:: {
+ "/user/username/projects/myproject/tsconfig.tsbuildinfo": 1
+} 
+
+directoryExists:: {} 
+
+getModifiedTimes:: {} 
+
+setModifiedTimes:: {} 
+
 Change:: Rename property title2 to title of interface ITest to revert back to original text
 
 Input::
@@ -544,6 +595,14 @@ export interface ITest {
     title: string;
 }
 
+
+fileExists:: {} 
+
+directoryExists:: {} 
+
+getModifiedTimes:: {} 
+
+setModifiedTimes:: {} 
 
 Output::
 >> Screen clear
@@ -720,6 +779,16 @@ exitCode:: ExitStatus.undefined
 }
 
 
+fileExists:: {
+ "/user/username/projects/myproject/tsconfig.tsbuildinfo": 1
+} 
+
+directoryExists:: {} 
+
+getModifiedTimes:: {} 
+
+setModifiedTimes:: {} 
+
 Change:: Rename property title to title2 of interface ITest
 
 Input::
@@ -728,6 +797,14 @@ export interface ITest {
     title2: string;
 }
 
+
+fileExists:: {} 
+
+directoryExists:: {} 
+
+getModifiedTimes:: {} 
+
+setModifiedTimes:: {} 
 
 Output::
 >> Screen clear
@@ -932,3 +1009,13 @@ exitCode:: ExitStatus.undefined
   "size": 1812
 }
 
+
+fileExists:: {
+ "/user/username/projects/myproject/tsconfig.tsbuildinfo": 1
+} 
+
+directoryExists:: {} 
+
+getModifiedTimes:: {} 
+
+setModifiedTimes:: {} 

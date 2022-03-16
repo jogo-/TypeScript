@@ -73,6 +73,27 @@ Output::
 
 exitCode:: ExitStatus.Success
 
+getModifiedTime:: {
+ "/src/src/a.ts": 1,
+ "/src/src/b.ts": 1,
+ "/src/src/c.ts": 1
+}
+
+setModifiedTime:: {}
+
+fileExists:: {
+ "/src/src/a.ts": 1,
+ "/src/src/b.ts": 1,
+ "/src/src/c.ts": 1,
+ "/src/lib/a.d.ts": 1,
+ "/src/tsconfig.tsbuildinfo": 1
+}
+
+directoryExists:: {
+ "/src/src": 4,
+ "/src/node_modules/@types": 1
+}
+
 
 //// [/src/lib/a.d.ts]
 export declare class B {
@@ -211,6 +232,32 @@ Output::
 
 exitCode:: ExitStatus.Success
 
+getModifiedTime:: {
+ "/src/src/a.ts": 1,
+ "/src/src/b.ts": 1,
+ "/src/src/c.ts": 1,
+ "/src/lib/a.d.ts": 2,
+ "/src/lib/b.d.ts": 1,
+ "/src/lib/c.d.ts": 1
+}
+
+setModifiedTime:: {}
+
+fileExists:: {
+ "/src/src/a.ts": 1,
+ "/src/src/b.ts": 1,
+ "/src/src/c.ts": 1,
+ "/src/lib/a.d.ts": 1,
+ "/src/lib/b.d.ts": 1,
+ "/src/lib/c.d.ts": 1,
+ "/src/tsconfig.tsbuildinfo": 1
+}
+
+directoryExists:: {
+ "/src/src": 4,
+ "/src/node_modules/@types": 1
+}
+
 
 //// [/src/lib/a.d.ts] file written with same contents
 //// [/src/lib/a.d.ts.map]
@@ -324,6 +371,30 @@ Output::
 [[90m12:07:00 AM[0m] Building project '/src/tsconfig.json'...
 
 exitCode:: ExitStatus.Success
+
+getModifiedTime:: {
+ "/src/src/a.ts": 1,
+ "/src/src/b.ts": 1,
+ "/src/src/c.ts": 1,
+ "/src/lib/a.d.ts": 1,
+ "/src/lib/b.d.ts": 1
+}
+
+setModifiedTime:: {}
+
+fileExists:: {
+ "/src/src/a.ts": 1,
+ "/src/src/b.ts": 1,
+ "/src/src/c.ts": 1,
+ "/src/lib/a.d.ts": 1,
+ "/src/lib/b.d.ts": 1,
+ "/src/tsconfig.tsbuildinfo": 1
+}
+
+directoryExists:: {
+ "/src/src": 4,
+ "/src/node_modules/@types": 1
+}
 
 
 //// [/src/lib/a.d.ts]
