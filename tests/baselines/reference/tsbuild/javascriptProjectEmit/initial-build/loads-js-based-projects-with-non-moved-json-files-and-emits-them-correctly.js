@@ -121,7 +121,6 @@ getModifiedTime:: {
  "/src/common/index.ts": 1,
  "/src/common/obj.json": 1,
  "/src/common/index.js": 1,
- "/src/common/index.d.ts": 1,
  "/src/sub-project/index.js": 1,
  "/src/sub-project-2/index.js": 1
 }
